@@ -14,16 +14,7 @@ function App() {
       <div className="btn-grid-3cols">
         <div className="input-wrapper">
           <Label text={`<Input />`} />
-          <Input
-            // startIcon="phone"
-            // endIcon="lock"
-            disabled={false}
-            // error={false}
-            hover={false}
-            focus={false}
-            label="Label"
-            // helperText="un petit texte en plus"
-          />
+          <Input />
         </div>
         <div className="input-wrapper">
           <Label text={`&:hover`} variant="light" />
