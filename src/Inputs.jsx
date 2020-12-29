@@ -2,31 +2,30 @@ import React from "react"
 import cn from "classnames"
 import "./inputs.scss"
 
-const variantsMapping = {
-  multiline: "textarea",
-}
-
 const Input = ({
-  variant,
   label,
   helperText,
-  color,
+  placeholder,
   hover,
   focus,
-  disabled,
+  error,
   startIcon,
   endIcon,
   size,
+  fullWidth,
+  multiline,
+  row,
   children,
   ...props
 }) => {
   // If the variant exists in variantsMapping, we use it.
   // Otherwise, use input tag instead.
-  const HTMLtag = variant ? variantsMapping[variant] : "input"
+  const HTMLtag = multiline ? "textarea" : "input"
 
-  const startIconElement = startIcon ? <i className="material-icons">{startIcon}</i> : null
-  const endIconElement = endIcon ? <i className="material-icons">{endIcon}</i> : null
-  const labelElement = label ? <label>{label}</label> : <label>Label</label>
+  const startIconElement = startIcon ? (
+    <i className="material-icons start-icon">{startIcon}</i>
+  ) : null
+  const endIconElement = endIcon ? <i className="material-icons end-icon">{endIcon}</i> : null
   const helperTextElement = helperText ? <p>{helperText}</p> : null
   return (
     <div className="input-component">
@@ -37,16 +36,18 @@ const Input = ({
           // [`input--hover`]: hover,
           // [`input--focus`]: focus,
           [`input--size-${size}`]: size,
-          [`input--color-${color}`]: color, 
           hover: hover,
           focus: focus,
-          disabled: disabled,
+          error: error,
           startIcon: startIcon,
           endIcon: endIcon,
+          fullWidth: fullWidth,
         })}
         {...props}
+        placeholder={placeholder ? placeholder : "Placeholder"}
+        rows={row}
       />
-      {labelElement}
+      <label>{label ? label : "Label"}</label>
       {endIconElement}
       {helperTextElement}
     </div>

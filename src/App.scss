@@ -14,7 +14,7 @@
   display: block;
   margin-bottom: 1em;
   font-family: "PT Mono", monospace;
-  font-size: 14px;
+  font-size: 12px;
   color: #333333;
 }
 
@@ -25,18 +25,21 @@
 .btn-grid-3cols {
   display: grid;
   grid-template-columns: repeat(3, 18em);
-  grid-auto-rows: 7em;
+  grid-auto-rows: 10em;
 }
-// .span2 {
-//   grid-column: span 2;
-// }
-// .btn-grid-2cols-large {
-//   display: grid;
-//   grid-template-columns: 25em 25em;
-//   grid-auto-rows: 8em;
-// }
-// .btn-grid-4cols {
-//   display: grid;
-//   grid-template-columns: repeat(4, 17em);
-//   grid-auto-rows: 8em;
-// }
+.span2 {
+  grid-column: span 2;
+}
+.span3 {
+  grid-column: span 3;
+}
+.btn-grid-2cols-large {
+  display: grid;
+  grid-template-columns: 26em 26em;
+  grid-auto-rows: 10em;
+}
+
+footer {
+  padding: 4rem;
+  color: var(--gray-300);
+}
