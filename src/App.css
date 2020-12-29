@@ -1,0 +1,42 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem;
+}
+.App-header {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #4f4f4f;
+}
+
+.component-label {
+  display: block;
+  margin-bottom: 1em;
+  font-family: "PT Mono", monospace;
+  font-size: 14px;
+  color: #333333;
+}
+
+.component-label-light {
+  color: var(--gray-400);
+}
+
+.btn-grid-2cols {
+  display: grid;
+  grid-template-columns: 20em 20em;
+  grid-auto-rows: 7em;
+}
+.span2 {
+  grid-column: span 2;
+}
+.btn-grid-2cols-large {
+  display: grid;
+  grid-template-columns: 25em 25em;
+  grid-auto-rows: 8em;
+}
+.btn-grid-4cols {
+  display: grid;
+  grid-template-columns: repeat(4, 17em);
+  grid-auto-rows: 8em;
+}
