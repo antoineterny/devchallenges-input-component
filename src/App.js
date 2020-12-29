@@ -16,12 +16,29 @@ function App() {
         <div className="btn-group">
           <Label text={`<Input />`} />
           <Input
-            endIcon="lock"
+            // startIcon="phone"
+            // endIcon="lock"
             disabled={false}
-            error={true}
-            placeholder={"Placehoooolder!!!"}
+            error={false}
+            placeholder={"Placeholder"}
             label="mon petit label tranquille"
-            helperText="un petit texte en plus"
+            // helperText="un petit texte en plus"
+          />
+        </div>
+        <div className="btn-group">
+          <Label text={`&:hover`} variant="light" />
+          <Input
+            hover={true}
+            placeholder={"Placeholder"}
+            label="mon petit label tranquille"
+          />
+        </div>
+        <div className="btn-group">
+          <Label text={`&:focus`} variant="light" />
+          <Input
+            focus={true}
+            placeholder={"Placeholder"}
+            label="mon petit label tranquille"
           />
         </div>
 

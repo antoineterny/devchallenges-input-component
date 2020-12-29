@@ -30,20 +30,23 @@ const Input = ({
   const helperTextElement = helperText ? <p>{helperText}</p> : null
   return (
     <div className="input-component">
-      {labelElement}
       {startIconElement}
       {/* <input type="text" placeholder="MY PLACEHOLDER" disabled={false} defaultValue="VALUE" /> */}
       <HTMLtag
         className={cn({
-          [`button--size-${size}`]: size,
-          [`button--color-${color}`]: color,
+          // [`input--hover`]: hover,
+          // [`input--focus`]: focus,
+          [`input--size-${size}`]: size,
+          [`input--color-${color}`]: color, 
           hover: hover,
+          focus: focus,
           disabled: disabled,
           startIcon: startIcon,
           endIcon: endIcon,
         })}
         {...props}
       />
+      {labelElement}
       {endIconElement}
       {helperTextElement}
     </div>

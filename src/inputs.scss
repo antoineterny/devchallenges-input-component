@@ -37,14 +37,14 @@ body {
 }
 
 .input-component {
+  display: flex;
+  flex-direction: column;
   label {
+    order: -1;
     display: block;
     font-size: 12px;
     color: var(--gray-700);
     margin-bottom: 4px;
-    &:focus {
-      color: var(--indigo-600);
-    }
   }
 
   input {
@@ -61,11 +61,14 @@ body {
       font-size: 14px;
       color: var(--gray-400);
     }
-    &:hover {
+    &:hover, &.hover {
       border-color: var(--gray-800);
     }
-    &:focus {
+    &:focus, &.focus {
       border-color: var(--indigo-600);
+      & ~ label {
+        color: var(--indigo-600);
+      }
     }
   }
 
