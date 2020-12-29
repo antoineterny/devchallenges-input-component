@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Input Component</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -46,10 +46,6 @@ Another very instructive challenge, albeit quite similar to the buttons one, whi
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [An Introduction to Reusable Components and how to create Typography Component](https://blogs.devchallenges.io/posts/wZKx9Jr3LTQaTZ4HXqdw)   
-  Which gives all the keys to solving this challenge.
-- [JedWatson's classnames](https://github.com/JedWatson/classnames#readme)   
-  Which proves to be extremely useful.
 - [Taildwind's colors](https://tailwindcss.com/docs/customizing-colors)    
   Beautiful and convenient palette.
 
@@ -80,9 +76,10 @@ $ npm start
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [An Introduction to Reusable Components and how to create Typography Component](https://blogs.devchallenges.io/posts/wZKx9Jr3LTQaTZ4HXqdw)   
+  Which gives all the keys to solving this challenge.
+- [JedWatson's classnames](https://github.com/JedWatson/classnames#readme)   
+  Which proves to be extremely useful.
 
 ## Contact
 
