@@ -1,6 +1,6 @@
 import React from "react"
 import cn from "classnames"
-import "./buttons.css"
+import "./buttons.scss"
 
 // Create a functional component that take
 // variant: the selected html tag
